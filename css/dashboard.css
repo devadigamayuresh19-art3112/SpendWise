@@ -2020,16 +2020,20 @@ body.modal-open {
    TRANSACTION HEADER ACTIONS
    ========================================================= */
 
-.transactions-header {
-    position: relative;
+.transaction-tools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
 }
 
-.transactions-header > .export-btn,
-.transactions-header > .clear-btn {
-    position: absolute;
-    top: 22px;
+.transaction-tools .export-btn,
+.transaction-tools .clear-btn {
+    position: static;
 
-    height: 30px;
+    flex-shrink: 0;
+
+    height: 32px;
     padding: 0 10px;
 
     border-radius: 8px;
@@ -2037,40 +2041,36 @@ body.modal-open {
     font-size: 9px;
     font-weight: 700;
 
-    transition: .18s ease;
+    white-space: nowrap;
+
+    transition:
+        transform .18s ease,
+        border-color .18s ease;
 }
 
-.transactions-header > .export-btn {
-    right: 23px;
-
+.transaction-tools .export-btn {
     color: var(--green);
     background: var(--green-soft);
 
     border: 1px solid transparent;
 }
 
-.transactions-header > .clear-btn {
-    right: 90px;
-
+.transaction-tools .clear-btn {
     color: var(--danger);
     background: var(--danger-soft);
 
     border: 1px solid transparent;
 }
 
-.export-btn:hover,
-.clear-btn:hover {
+.transaction-tools .export-btn:hover {
     transform: translateY(-1px);
-}
-
-.export-btn:hover {
     border-color: var(--green-light);
 }
 
-.clear-btn:hover {
+.transaction-tools .clear-btn:hover {
+    transform: translateY(-1px);
     border-color: var(--danger);
 }
-
 
 /* =========================================================
    SORT SELECT
@@ -2375,8 +2375,8 @@ body.dark-mode .empty-state p {
         font-size: 8px;
     }
 
-    .transactions-header > .export-btn,
-    .transactions-header > .clear-btn {
+    .transactions-header .export-btn,
+    .transactions-header .clear-btn {
         position: static;
 
         margin-top: 0;
@@ -2442,8 +2442,8 @@ body.dark-mode .empty-state p {
         height: 25px;
     }
 
-    .transactions-header > .export-btn,
-    .transactions-header > .clear-btn {
+    .transactions-header  .export-btn,
+    .transactions-header  .clear-btn {
         width: 100%;
         margin-top: 6px;
     }
