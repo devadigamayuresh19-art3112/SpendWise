@@ -2049,29 +2049,34 @@ body.modal-open {
 }
 
 .transaction-tools .export-btn {
-    color: var(--green);
-    background: var(--green-soft);
+    color: #18583d;
+    background: #e9f4ee;
 
-    border: 1px solid transparent;
+    border: 1px solid #c8e2d2;
 }
 
 .transaction-tools .clear-btn {
-    color: var(--danger);
-    background: var(--danger-soft);
+    color: #a85d4c;
+    background: #fff3f0;
 
-    border: 1px solid transparent;
+    border: 1px solid #f0d2ca;
 }
 
 .transaction-tools .export-btn:hover {
+    color: #ffffff;
+    background: #18583d;
+    border-color: #18583d;
+
     transform: translateY(-1px);
-    border-color: var(--green-light);
 }
 
 .transaction-tools .clear-btn:hover {
-    transform: translateY(-1px);
-    border-color: var(--danger);
-}
+    color: #ffffff;
+    background: #a85d4c;
+    border-color: #a85d4c;
 
+    transform: translateY(-1px);
+}
 /* =========================================================
    SORT SELECT
    ========================================================= */
