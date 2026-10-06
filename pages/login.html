@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Log in | SpendWise</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/auth.css">
+
+</head>
+
+<body>
+
+<div class="auth-page">
+
+
+    <!-- ================= BRAND PANEL ================= -->
+
+    <section class="auth-brand">
+
+        <a href="../index.html" class="auth-brand-logo">
+
+            <span class="auth-brand-icon">₹</span>
+
+            <span>
+                Spend<span>Wise</span>
+            </span>
+
+        </a>
+
+
+        <div class="auth-brand-content">
+
+            <div class="auth-eyebrow">
+                WELCOME BACK
+            </div>
+
+            <h1>
+                Your money.
+                <span>Your control.</span>
+            </h1>
+
+            <p class="auth-brand-description">
+                Pick up where you left off. Keep your spending organized,
+                understand your habits, and stay in control of every rupee.
+            </p>
+
+
+            <div class="auth-benefits">
+
+                <div class="auth-benefit">
+                    <span class="auth-benefit-icon">✓</span>
+                    Track income and expenses effortlessly
+                </div>
+
+                <div class="auth-benefit">
+                    <span class="auth-benefit-icon">◔</span>
+                    Understand where your money goes
+                </div>
+
+                <div class="auth-benefit">
+                    <span class="auth-benefit-icon">₹</span>
+                    Make smarter spending decisions
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="auth-brand-footer">
+            Track smarter. Spend better.
+        </div>
+
+    </section>
+
+
+    <!-- ================= FORM ================= -->
+
+    <section class="auth-form-side">
+
+        <div class="auth-container">
+
+
+            <div class="mobile-auth-brand">
+
+                <a href="../index.html" class="auth-brand-logo">
+
+                    <span class="auth-brand-icon">₹</span>
+
+                    <span>
+                        Spend<span>Wise</span>
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div class="auth-header">
+
+                <h2>Welcome back</h2>
+
+                <p>
+                    Log in to continue managing your money.
+                </p>
+
+            </div>
+
+
+            <form class="auth-form" id="loginForm">
+
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email address
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">✉</span>
+
+                        <input
+                            class="form-input"
+                            type="email"
+                            id="loginEmail"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">●</span>
+
+                        <input
+                            class="form-input"
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            data-target="loginPassword"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-options">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        Remember me
+
+                    </label>
+
+                    <a href="#" class="forgot-link">
+                        Forgot password?
+                    </a>
+
+                </div>
+
+
+                <div class="form-error" id="loginError"></div>
+
+
+                <button type="submit" class="auth-submit">
+                    Log in
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <div class="auth-divider">
+                SECURE DEMO
+            </div>
+
+
+            <div class="demo-notice">
+
+                <span class="demo-notice-icon">i</span>
+
+                <span>
+                    This student project uses browser-based demo
+                    authentication. Your account data stays in this browser.
+                </span>
+
+            </div>
+
+
+            <div class="auth-switch">
+
+                Don't have an account?
+
+                <a href="signup.html">
+                    Create one
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="../js/auth.js"></script>
+
+</body>
+</html>

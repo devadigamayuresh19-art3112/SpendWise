@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpendWise | Track Smarter. Spend Better.</title>
+
+    <meta
+        name="description"
+        content="SpendWise is a simple, smart and student-friendly personal finance tracker."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar" id="navbar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">₹</span>
+            <span class="brand-name">Spend<span>Wise</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it works</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="pages/login.html" class="nav-login">Log in</a>
+            <a href="pages/signup.html" class="btn btn-primary nav-cta">
+                Get Started
+            </a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+
+        <div class="mobile-menu-divider"></div>
+
+        <a href="pages/login.html">Log in</a>
+
+        <a href="pages/signup.html" class="btn btn-primary">
+            Get Started
+        </a>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    SMART FINANCE FOR STUDENTS
+                </div>
+
+                <h1>
+                    Take control of
+                    <span>your money.</span>
+                </h1>
+
+                <p class="hero-description">
+                    SpendWise helps you track expenses, understand your
+                    spending habits, and make smarter financial decisions —
+                    without the complicated spreadsheets.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="pages/signup.html" class="btn btn-primary btn-large">
+                        Start Tracking
+                        <span>→</span>
+                    </a>
+
+                    <a href="#features" class="btn btn-secondary btn-large">
+                        Explore Features
+                    </a>
+
+                </div>
+
+                <div class="hero-points">
+
+                    <div>
+                        <span class="check">✓</span>
+                        Simple
+                    </div>
+
+                    <div>
+                        <span class="check">✓</span>
+                        Fast
+                    </div>
+
+                    <div>
+                        <span class="check">✓</span>
+                        Student-friendly
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= DASHBOARD PREVIEW ================= -->
+
+            <div class="hero-preview">
+
+                <div class="preview-glow"></div>
+
+                <div class="dashboard-window">
+
+                    <div class="window-topbar">
+
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span class="window-title">SpendWise Dashboard</span>
+
+                        <span class="window-status">
+                            ● Live
+                        </span>
+
+                    </div>
+
+
+                    <div class="preview-content">
+
+                        <div class="preview-header">
+
+                            <div>
+                                <span class="preview-small">
+                                    Total Balance
+                                </span>
+
+                                <strong>₹24,850</strong>
+                            </div>
+
+                            <div class="preview-date">
+                                October 2026
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-stats">
+
+                            <div class="preview-stat income">
+                                <span>Income</span>
+                                <strong>₹32,000</strong>
+                                <small>↑ 8.4%</small>
+                            </div>
+
+                            <div class="preview-stat expense">
+                                <span>Expenses</span>
+                                <strong>₹7,150</strong>
+                                <small>↓ 4.2%</small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-chart-card">
+
+                            <div class="chart-heading">
+                                <div>
+                                    <span>Spending overview</span>
+                                    <strong>₹7,150</strong>
+                                </div>
+
+                                <span class="chart-period">This month</span>
+                            </div>
+
+                            <div class="chart">
+
+                                <div class="chart-grid">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <svg
+                                    viewBox="0 0 500 150"
+                                    preserveAspectRatio="none"
+                                    class="chart-svg"
+                                >
+                                    <defs>
+                                        <linearGradient
+                                            id="chartGradient"
+                                            x1="0"
+                                            y1="0"
+                                            x2="0"
+                                            y2="1"
+                                        >
+                                            <stop
+                                                offset="0%"
+                                                stop-color="#61b487"
+                                                stop-opacity=".35"
+                                            />
+                                            <stop
+                                                offset="100%"
+                                                stop-color="#61b487"
+                                                stop-opacity="0"
+                                            />
+                                        </linearGradient>
+                                    </defs>
+
+                                    <path
+                                        d="M0 115
+                                           C45 105, 55 85, 95 95
+                                           S145 70, 185 80
+                                           S235 55, 275 70
+                                           S325 48, 360 60
+                                           S420 35, 500 42
+                                           L500 150
+                                           L0 150 Z"
+                                        fill="url(#chartGradient)"
+                                    />
+
+                                    <path
+                                        d="M0 115
+                                           C45 105, 55 85, 95 95
+                                           S145 70, 185 80
+                                           S235 55, 275 70
+                                           S325 48, 360 60
+                                           S420 35, 500 42"
+                                        fill="none"
+                                        stroke="#61b487"
+                                        stroke-width="3"
+                                    />
+                                </svg>
+
+                            </div>
+
+                            <div class="chart-labels">
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-bottom">
+
+                            <div class="recent-heading">
+                                <span>Recent transactions</span>
+                                <span>View all →</span>
+                            </div>
+
+                            <div class="preview-transaction">
+
+                                <div class="transaction-left">
+
+                                    <div class="transaction-icon food">
+                                        🍔
+                                    </div>
+
+                                    <div>
+                                        <strong>Lunch</strong>
+                                        <span>Food</span>
+                                    </div>
+
+                                </div>
+
+                                <strong class="amount expense-amount">
+                                    -₹180
+                                </strong>
+
+                            </div>
+
+
+                            <div class="preview-transaction">
+
+                                <div class="transaction-left">
+
+                                    <div class="transaction-icon travel">
+                                        🚌
+                                    </div>
+
+                                    <div>
+                                        <strong>Bus Pass</strong>
+                                        <span>Travel</span>
+                                    </div>
+
+                                </div>
+
+                                <strong class="amount expense-amount">
+                                    -₹650
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TRUST STRIP ================= -->
+
+        <section class="trust-strip">
+
+            <p>Built for people who want to</p>
+
+            <div class="trust-items">
+
+                <span>
+                    <strong>Track</strong> every rupee
+                </span>
+
+                <span>
+                    <strong>Understand</strong> their habits
+                </span>
+
+                <span>
+                    <strong>Spend</strong> with confidence
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="section" id="features">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    FEATURES
+                </span>
+
+                <h2>
+                    Everything you need.
+                    <span>Nothing you don't.</span>
+                </h2>
+
+                <p>
+                    SpendWise keeps personal finance simple so you can focus
+                    on what actually matters.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card featured">
+
+                    <div class="feature-icon">
+                        ₹
+                    </div>
+
+                    <div class="feature-content">
+
+                        <span class="feature-number">01</span>
+
+                        <h3>Track Expenses</h3>
+
+                        <p>
+                            Record your everyday spending in seconds and
+                            always know where your money is going.
+                        </p>
+
+                    </div>
+
+                    <div class="feature-decoration">
+                        ₹
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ◔
+                    </div>
+
+                    <div class="feature-content">
+
+                        <span class="feature-number">02</span>
+
+                        <h3>Understand Spending</h3>
+
+                        <p>
+                            See your spending patterns and identify the
+                            categories taking the biggest bite from your budget.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <div class="feature-content">
+
+                        <span class="feature-number">03</span>
+
+                        <h3>Stay In Control</h3>
+
+                        <p>
+                            Make better decisions with a clear picture of your
+                            income, expenses and remaining balance.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="section how-section" id="how-it-works">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    HOW IT WORKS
+                </span>
+
+                <h2>
+                    Start managing your money
+                    <span>in three simple steps.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div class="step-line"></div>
+
+                    <h3>Create your account</h3>
+
+                    <p>
+                        Sign up in seconds and get your personal
+                        finance dashboard.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div class="step-line"></div>
+
+                    <h3>Add your transactions</h3>
+
+                    <p>
+                        Record income and expenses as they happen.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>Spend smarter</h3>
+
+                    <p>
+                        Understand your money and make better financial
+                        decisions every day.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-content">
+
+                <span class="section-label">
+                    READY?
+                </span>
+
+                <h2>
+                    Your money deserves
+                    <span>a better system.</span>
+                </h2>
+
+                <p>
+                    Start tracking your spending today.
+                </p>
+
+                <a href="pages/signup.html" class="btn btn-light btn-large">
+                    Create Free Account
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <a href="index.html" class="brand footer-brand">
+                <span class="brand-icon">₹</span>
+                <span class="brand-name">Spend<span>Wise</span></span>
+            </a>
+
+            <p>
+                Track smarter. Spend better.
+            </p>
+
+            <span class="footer-copy">
+                © 2026 SpendWise
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/landing.js"></script>
+
+</body>
+</html>
