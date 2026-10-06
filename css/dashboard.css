@@ -2015,7 +2015,6 @@ body.modal-open {
     transform: translateY(-1px);
 }
 
-
 /* =========================================================
    TRANSACTION HEADER ACTIONS
    ========================================================= */
@@ -2029,7 +2028,7 @@ body.modal-open {
 
 .transaction-tools .export-btn,
 .transaction-tools .clear-btn {
-    position: static;
+    position: static !important;
 
     flex-shrink: 0;
 
@@ -2045,36 +2044,38 @@ body.modal-open {
 
     transition:
         transform .18s ease,
+        background .18s ease,
+        color .18s ease,
         border-color .18s ease;
 }
 
+/* EXPORT */
 .transaction-tools .export-btn {
-    color: #18583d;
-    background: #e9f4ee;
-
-    border: 1px solid #c8e2d2;
+    color: #18583d !important;
+    background: #d8f0e2 !important;
+    border: 1px solid #9bcdb0 !important;
 }
 
+/* CLEAR ALL */
 .transaction-tools .clear-btn {
-    color: #a85d4c;
-    background: #fff3f0;
-
-    border: 1px solid #f0d2ca;
+    color: #a33f2d !important;
+    background: #ffe1da !important;
+    border: 1px solid #e5a99d !important;
 }
 
+/* EXPORT HOVER */
 .transaction-tools .export-btn:hover {
-    color: #ffffff;
-    background: #18583d;
-    border-color: #18583d;
-
+    color: #ffffff !important;
+    background: #18583d !important;
+    border-color: #18583d !important;
     transform: translateY(-1px);
 }
 
+/* CLEAR HOVER */
 .transaction-tools .clear-btn:hover {
-    color: #ffffff;
-    background: #a85d4c;
-    border-color: #a85d4c;
-
+    color: #ffffff !important;
+    background: #a33f2d !important;
+    border-color: #a33f2d !important;
     transform: translateY(-1px);
 }
 /* =========================================================
